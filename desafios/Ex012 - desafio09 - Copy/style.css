@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+body{
+    background-color: rgba(22, 20, 20, 0.904);
+    text-align: center;
+    color: aliceblue;
+}
+
+h1:hover{
+    font-size: 35px;
+    color: blue;
+}
+
+a:hover{
+    zoom: 150%;
+}

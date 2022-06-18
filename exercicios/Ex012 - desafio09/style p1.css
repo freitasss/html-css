@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+body{
+    background-color: rgba(22, 20, 20, 0.904);
+    text-align: center;
+    color: aliceblue;
+
+}
+
+img{
+    padding: 10px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    
+}

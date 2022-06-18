@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightcoral;
+            height: 300px;
+            width: 300px;
+            border: 10px solid lightseagreen;
+
+            padding: 10px; /* QUANDO TODOS OS LADOS FOREM AS MESMAS MEDIDAS, O PADDING 10PX, VALERÁ PARA TODOS OS OS LADOS */
+            /* QUANDO COLOCADO APENAS DUAS MEDIDAS, PADDING 10PX E 20PX, O PADDING 10PX VALERÁ PARA O TOP E BOTTOM E O 20PX PARA RIGHT E LEFT. */
+
+            margin: 20px 20px 40px 20px; /* PARA CENTRALIZAR UMA CAIXA, OU LADOS DE UMA CAIXA, BASTA USAR O MARGIN AUTO*/
+
+            /*  margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;  */
+
+        }
+
+        a{
+            border: 10px solid red;
+            /*BORDER-WIDTH: 10PX
+              BORDER-STYLE: SOLID
+              BORDER-COLOR: RED*/
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href=""> links sõa exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
