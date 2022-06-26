@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width:500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;  /* COLÁVEL / GRUDÁVEL */
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){ /* odd= impar even-par *//* Essa pseudoclasse significa que dentro da minha tr, de 2 em 2, vai ter background color gray */ 
+            background-color: rgb(212, 211, 211);
+        }
+        
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População por Unidades Federatiivas do Brasil</caption>
+        <thead>
+            <th scope="col">Estado</th>  <!-- "título" da COLUNA -->
+            <th scope="col" style="width: 100px;">População</th>  <!-- "título" da COLUNA -->
+        </thead>
+        <tbody>
+            <tr>  <!-- linha da coluna -->
+                <td>São Paulo</td> <!-- Dado da LINHA e da coluna ESTADO -->
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 497 395</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 150 143</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 228 091</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 112 062</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 297 861</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 867 448</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 101 180</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 861 924	</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 734 568	</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 551 322</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 950 359</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 894 899</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th> <!-- "título" da linha -->
+            <td>180 256 894</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti quo cupiditate doloribus soluta quaerat non laboriosam ad, voluptatem, aliquam, alias qui neque omnis provident nisi quos eum! Quaerat, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolor quidem labore cumque id quam minus molestias cupiditate nisi nobis sint, temporibus in est iste dolores ratione. Omnis, fugiat quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolorum ipsum voluptates id accusamus aspernatur qui molestias optio fugit. Minus qui eveniet quis eaque sed accusantium aut quo officiis eligendi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia recusandae ea expedita et molestiae culpa corporis quam repudiandae architecto illum, tempora nesciunt? Impedit, ipsum delectus eveniet non corrupti hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur fugiat reprehenderit hic ipsam provident itaque eligendi nobis repellendus quaerat unde, sapiente, possimus, quasi optio laborum quam error voluptate maxime.</p>
+
+</body>
+</html>
