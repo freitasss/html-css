@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Nomes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>   <!-- 1 título com 3 colunas (grupo, nomes, filmes)-->
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th> <!-- Como são varias colunas ligadas a 'filme', usamos colgroup -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- PRIMEIRA LINHA DA TABELA, COM "MULHERES" MESCLANDO 3 CÉLULAS PARA BAIXO -->
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!-- Como são varias linhas ligadas a 'Mulheres', usamos rowgroup -->
+                <td> Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr> <!-- SEGUNDA LINHA DA TABELA -->
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr> <!-- TERCEIRA LINHA DA TABELA -->
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>MAtrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr> <!-- PRIMEIRA LINHA DA TABELA, COM "HOMENS" MESCLANDO 3 CÉLULAS PARA BAIXO -->
+                <th rowspan="3">Homens</th>  <!-- Como são varias linhas ligadas a 'Homens', usamos rowgroup -->
+                <td>Danilo Freitas</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiator</td>
+            </tr>
+            <tr>  <!-- SEGUNDA LINHA DA TABELA -->
+                <td>Daniel Maia</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>  <!-- TERCEIRA LINHA DA TABELA -->
+                <td>Fabiano Silva</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
