@@ -66,6 +66,10 @@ section{
     font-size: 2vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal{
     background-color: aliceblue;
     color: black;
@@ -74,11 +78,33 @@ section{
 .imagem{
     background-color: rgba(51, 51, 51);
     color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);  /* SOMBRA PRA DENTRO */
+    background-attachment: fixed;  /* ESSE BACKGROUD PARA O EFEITO PARALLAX. */ /* A IMAGEM VAI OCUPAR TODOS ESPAÇO DA SECTION*/
 }
 
 .imagem > p {
     display: inline-block;   /* AO INVES DE 400PX DE LARGURA, O INLINE-BLOCK SE ADAPTA (A LARGURA) AO TAMANHO DO CONTEUDO*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 5px;
+}
+
+.imagem > p:hover{
+    zoom: 130%;
+   /* background-color: rgba(0, 0, 0, 0.123); */
+  /*  transition: 1s; */
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
 }
 
 footer{
