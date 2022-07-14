@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormulárioS</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <!--
+        UTILIZAR O GET QUANDO:
+        O FORMULÁRIO PEDIR COISAS QUE NÃO SÃO SIGILOSAS/SENSÍVEIS.
+        FOR ENVIAR DADOS ATÉ 3 MIL BYTES (QUANDO O FORMULÁRIO TIVER ATÉ 3 MIL LETRAS.)
+        NÃO ENVIAR DE FOTOS E VIDEOS
+
+        UTILIZAR O POST QUANDO:
+        O FORMULÁRIO PEDIR DADOS SENSÍVEIS E SIGILOSOS (APRENDER HTTPS PARA PROTEGER DADOS)
+        OS DADOS TIVEREM MAIS DE 3 MIL BYTES
+        ENVIO DE ARQUIVOS
+    -->
+
+    <!--
+        O ID DO INPUT, FAZ LIGAÇÃO COM O HTML E JS
+        O NAME DO INPUT, FAZ LIGAÇÃO COM HTML E PHP
+    -->
+    <form action="cadastro.php" autocomplete="off" >
+        <label for="inome">Nome</label> <!--SEMPRE USAR O LABEL PARA NOMEAR QUALQUER INPUT DO FORMULÁRIO, ASSIM ELES IRÃO ESTAR "LIGADOS"-->
+        <input type="text" name="nome" id="inome" > <br> <!--INPUT DO TIPO TEXTO-->
+        <label for="isobrenome">Sobrenome</label> 
+        <input type="text" name="sobrenome" id="isobrenome"> <br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
