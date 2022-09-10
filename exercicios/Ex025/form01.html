@@ -21,7 +21,7 @@
         NÃO ENVIAR DE FOTOS E VIDEOS
 
         UTILIZAR O POST QUANDO:
-        O FORMULÁRIO PEDIR DADOS SENSÍVEIS E SIGILOSOS (APRENDER HTTPS PARA PROTEGER DADOS)
+        O FORMULÁRIO PEDIR DADOS SENSÍVEIS E SIGILOSOS (APRENDER HTTPS PARA PROTEGER/CRIPTOGRAFAR DADOS)
         OS DADOS TIVEREM MAIS DE 3 MIL BYTES
         ENVIO DE ARQUIVOS
     -->
@@ -30,7 +30,7 @@
         O ID DO INPUT, FAZ LIGAÇÃO COM O HTML E JS
         O NAME DO INPUT, FAZ LIGAÇÃO COM HTML E PHP
     -->
-    <form action="cadastro.php" autocomplete="off" >
+    <form action="cadastro.php" method="post" autocomplete="off" > 
         <label for="inome">Nome</label> <!--SEMPRE USAR O LABEL PARA NOMEAR QUALQUER INPUT DO FORMULÁRIO, ASSIM ELES IRÃO ESTAR "LIGADOS"-->
         <input type="text" name="nome" id="inome" > <br> <!--INPUT DO TIPO TEXTO-->
         <label for="isobrenome">Sobrenome</label> 

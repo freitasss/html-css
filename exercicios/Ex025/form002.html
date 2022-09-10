@@ -12,11 +12,12 @@
     <form action="cadastro.php" method="post">
         <p>
             <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu" required >
+            <input type="text" name="usu" id="iusu" required minlength="7" maxlength="55" size="10" placeholder="Nome do Usuário" autocomplete="username"> <!-- REQUIRED SIGNIFICA QUE O CAMPO É OBRIGATORIO --> <!--SIZE SIGNIFICA QUANTAS LETRAS VAI SER MOSTRADA DENTRO DA CAIXA-->
+            
         </p>
         <p>
             <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen" required>
+            <input type="password" name="sen" id="isen" required minlength="7" maxlength="20" placeholder="Senha" size="7" autocomplete="current-password"> 
         </p>
         <p>
             <input type="submit" value="Enviar">
