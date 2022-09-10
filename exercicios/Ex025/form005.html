@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get"></form>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M">
+            <label for="imas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifem" value="F"> 
+            <label for="ifem">Feminino</label> <br>
+        </fieldset>
+
+        <!-- PARA QUE AS DUAS CAIXAS NÃO FIQUE MARCADA E NÃO PODER MAIS DESMARCAR, NÃO BASTA COLOCAR DENTRO DE FIELDSET, ELAS TEEM QUE TER O MESMO "NAME". -->
+        <!-- ASSIM, PODEMOS MARCAR E DESMARCAR E SELECIONAR APENAS UMA.-->
+
+        <fieldset> 
+            <legend>Esportes Favoritos</legend>
+                <label for="iesbas">Basquete: </label>
+                <input type="checkbox" name="esbas" id="iesbas" checked > <br> <!--CHECKED significa que a caixa do formulario ja vai aparecer marcada.-->
+
+                <label for="iesfut">Futebol: </label>
+                <input type="checkbox" name="esfut" id="iesfut"> <br>
+
+                <label for="iesnat">Natação: </label>
+                <input type="checkbox" name="esnat" id="iesnat"> <br>
+
+                <label for="iesten">Tênis: </label>
+                <input type="checkbox" name="esten" id="iesten"> <br>
+        </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
