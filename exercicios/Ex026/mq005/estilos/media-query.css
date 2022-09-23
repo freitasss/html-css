@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/* Todas as demais medias */
+
+/* Typical Device Breakpoints 
+---------------------------------
+W3 SCHOOOL / PESQUISAS NA WEB
+---------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablets: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) { /* Telas a partir de 768px, ou seja, acima de 768px, vão ter as seguintes configurações abaixo. Sendo que o nosso site foi desenvolvido com o pensamento Mobile First, ou seja, ele foi criado primeiro para telas pequenas (celulares); então aqui nessa media query, nós adaptamos/adaptaremos para telas maiores. */
+    #burguer {
+        display: none; /* A partir de 768px, não vai aparecer o menu de hamburguer */
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block; /* Um do lado do outro */
+    }
+
+    main {
+        width: 768px;
+    }
+}
